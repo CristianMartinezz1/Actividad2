@@ -255,11 +255,11 @@ Es mayor de edad: true
 Fuerza de contraseña: Fuerte
 ```
 
-![Consola - formulario](img/captura-consola-formulario.png)
+![Consola - formulario](img/Formulario.png)
 
 **Modal de edad:**
 
-![Modal de edad](img/captura-modal.png)
+![Modal de edad](img/Modal edad.png)
 
 **Consola mostrando resultado del login:**
 
@@ -269,7 +269,7 @@ Correo válido: true
 Contraseña válida: true
 ```
 
-![Consola - login](img/captura-consola-login.png)
+![Consola - login](img/Login.png)
 
 ---
 
