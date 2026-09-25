@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Registro</title>
+<link rel="stylesheet" href="css/formulario.css" />
+</head>
+<body>
+
+<main class="contenedor-pagina">
+  <div class="seccion-intro">
+    <h1 class="titulo-seccion">Registrarse</h1>
+    <p class="descripcion-seccion">Complete el formulario con sus datos personales para dar de alta su cuenta en el sistema utilizando la validación.</p>
+    
+    <div class="cambio-autenticacion">
+      <p class="texto-cambio">¿Ya tienes cuenta?</p>
+      <a href="login.html" class="enlace-secundario">Iniciar sesión</a>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <form id="formRegistro" novalidate>
+
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" placeholder="Ej. Cristian Martínez" />
+        <span class="pista" id="hintNombre"></span>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="Ej. cristian@gmail.com" />
+        <span class="pista" id="hintCorreo"></span>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono (máx. 10 dígitos)</label>
+        <input type="text" id="telefono" placeholder="Ej. 9511234567" />
+        <span class="pista" id="hintTelefono"></span>
+      </div>
+
+      <div class="campo">
+        <label for="fechaNacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fechaNacimiento" />
+        <span class="pista" id="hintFecha"></span>
+      </div>
+
+      <div class="campo">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Mín. 8 caracteres" />
+        <span class="pista" id="hintPassword"></span>
+      </div>
+
+      
+      <button type="button" id="btnRegistrar" class="boton">Registrarme</button>
+
+      <div class="mensaje-formulario" id="formMsg"></div>
+    </form>
+  </div>
+</main>
+
+<div class="superposicion-modal" id="modalEdad">
+  <div class="caja-modal">
+    <div class="icono">✓</div>
+    <h3>¡Registro exitoso!</h3>
+    <p>Tu edad calculada es:</p>
+    <div class="edad-grande" id="edadCalculada">--</div>
+    <p class="estatus" id="estatusEdad">--</p>
+    <button class="boton" id="cerrarModal">Aceptar</button>
+  </div>
+</div>
+
+<script src="js/utileria.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iniciar Sesión</title>
+<link rel="stylesheet" href="css/formulario.css" />
+</head>
+<body>
+
+<main class="contenedor-pagina">
+  <div class="seccion-intro">
+    <h1 class="titulo-seccion">Iniciar sesión</h1>
+    <p class="descripcion-seccion">Ingrese sus credenciales registradas para acceder al sistema de forma segura.</p>
+    
+    <div class="cambio-autenticacion">
+      <p class="texto-cambio">¿No tengo cuenta?</p>
+      <a href="index.html" class="enlace-secundario">Registrarse</a>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <form id="formLogin" novalidate>
+
+      <div class="campo">
+        <label for="loginCorreo">Correo electrónico</label>
+        <input type="email" id="loginCorreo" placeholder="Ej. cristian@gmail.com" />
+      </div>
+
+      <div class="campo">
+        <label for="loginPassword">Contraseña</label>
+        <input type="password" id="loginPassword" placeholder="Mín. 8 caracteres" />
+      </div>
+
+      <button type="button" id="btnIngresar" class="boton">Ingresar</button>
+      <div class="mensaje-formulario" id="loginMsg"></div>
+    </form>
+  </div>
+</main>
+
+<script src="js/utileria.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>
