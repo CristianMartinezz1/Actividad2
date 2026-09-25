@@ -259,7 +259,7 @@ Fuerza de contraseña: Fuerte
 
 **Modal de edad:**
 
-![Modal de edad](img/Modal%20Edad.png)
+![Modal de edad](img/Modaledad.png)
 
 **Consola mostrando resultado del login:**
 
